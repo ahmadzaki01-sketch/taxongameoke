@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kuis Taksonomi Lengkap</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Kuis Taksonomi Lengkap</h1>
+
+        <div id="start-screen">
+            <h2>Login Siswa</h2>
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input id="name" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="kelas">Kelas:</label>
+                <input id="kelas" type="text" required>
+            </div>
+            <div class="form-group">
+                <label for="absen">No Absen:</label>
+                <input id="absen" type="number" required>
+            </div>
+            <button id="begin-quiz">Mulai Kuis</button>
+        </div>
+
+        <div id="mcq-quiz-screen" style="display:none;">
+            <div id="hud-mcq"></div>
+            <h2 id="question-text"></h2>
+            <div id="choices-container"></div>
+            <button id="next-question-mcq" style="display:none;">Soal Berikutnya</button>
+        </div>
+
+        <div id="dragdrop-game-screen" style="display:none;">
+            <div id="hud-dragdrop"></div>
+            <p>Susun urutan taksonomi dari **Domain** hingga **Spesies**.</p>
+            <div class="board">
+                <div id="pool" class="pool"></div>
+                <div id="targets" class="targets"></div>
+            </div>
+            <button id="check-dragdrop">Cek Jawaban</button>
+        </div>
+
+        <div id="final-result-screen" style="display:none;">
+            <h2>Hasil Kuis Akhir</h2>
+            <p id="final-result-text"></p>
+            <button id="send-final-result">Kirim Hasil Akhir</button>
+        </div>
+
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
